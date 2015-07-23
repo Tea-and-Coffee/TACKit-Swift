@@ -13,6 +13,12 @@
 		F4C39BD71B608B8500D5AC25 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4C39BD61B608B8500D5AC25 /* Images.xcassets */; };
 		F4C39BDA1B608B8500D5AC25 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C39BD81B608B8500D5AC25 /* LaunchScreen.xib */; };
 		F4C39BE61B608B8500D5AC25 /* TACKitSwiftExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C39BE51B608B8500D5AC25 /* TACKitSwiftExampleTests.swift */; };
+		F4C39BFE1B608C7000D5AC25 /* NSObject+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C39BF31B608C7000D5AC25 /* NSObject+Common.swift */; };
+		F4C39C001B608C7000D5AC25 /* TACTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C39BF61B608C7000D5AC25 /* TACTableView.swift */; };
+		F4C39C021B608C7000D5AC25 /* TACView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C39BFA1B608C7000D5AC25 /* TACView.swift */; };
+		F4C39C031B608C7000D5AC25 /* UIView+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C39BFB1B608C7000D5AC25 /* UIView+Common.swift */; };
+		F4C39C041B608C7000D5AC25 /* TACViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C39BFD1B608C7000D5AC25 /* TACViewController.swift */; };
+		F4C39C061B6092DA00D5AC25 /* UITableViewCell+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C39C051B6092DA00D5AC25 /* UITableViewCell+Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,12 @@
 		F4C39BDF1B608B8500D5AC25 /* TACKitSwiftExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TACKitSwiftExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C39BE41B608B8500D5AC25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4C39BE51B608B8500D5AC25 /* TACKitSwiftExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TACKitSwiftExampleTests.swift; sourceTree = "<group>"; };
+		F4C39BF31B608C7000D5AC25 /* NSObject+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Common.swift"; sourceTree = "<group>"; };
+		F4C39BF61B608C7000D5AC25 /* TACTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TACTableView.swift; sourceTree = "<group>"; };
+		F4C39BFA1B608C7000D5AC25 /* TACView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TACView.swift; sourceTree = "<group>"; };
+		F4C39BFB1B608C7000D5AC25 /* UIView+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Common.swift"; sourceTree = "<group>"; };
+		F4C39BFD1B608C7000D5AC25 /* TACViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TACViewController.swift; sourceTree = "<group>"; };
+		F4C39C051B6092DA00D5AC25 /* UITableViewCell+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Common.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +74,7 @@
 				F4C39BCC1B608B8500D5AC25 /* TACKitSwiftExample */,
 				F4C39BE21B608B8500D5AC25 /* TACKitSwiftExampleTests */,
 				F4C39BCB1B608B8500D5AC25 /* Products */,
+				F4C39BF01B608C3C00D5AC25 /* Library */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +123,68 @@
 				F4C39BE41B608B8500D5AC25 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F4C39BF01B608C3C00D5AC25 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				F4C39BF11B608C4A00D5AC25 /* TACKitSwift */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		F4C39BF11B608C4A00D5AC25 /* TACKitSwift */ = {
+			isa = PBXGroup;
+			children = (
+				F4C39BF21B608C7000D5AC25 /* NSObject */,
+				F4C39BF51B608C7000D5AC25 /* UITableView */,
+				F4C39BF71B608C7000D5AC25 /* UITableViewCell */,
+				F4C39BF91B608C7000D5AC25 /* UIView */,
+				F4C39BFC1B608C7000D5AC25 /* UIViewController */,
+			);
+			name = TACKitSwift;
+			path = ../TACKitSwift;
+			sourceTree = "<group>";
+		};
+		F4C39BF21B608C7000D5AC25 /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				F4C39BF31B608C7000D5AC25 /* NSObject+Common.swift */,
+			);
+			path = NSObject;
+			sourceTree = "<group>";
+		};
+		F4C39BF51B608C7000D5AC25 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				F4C39BF61B608C7000D5AC25 /* TACTableView.swift */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		F4C39BF71B608C7000D5AC25 /* UITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				F4C39C051B6092DA00D5AC25 /* UITableViewCell+Common.swift */,
+			);
+			path = UITableViewCell;
+			sourceTree = "<group>";
+		};
+		F4C39BF91B608C7000D5AC25 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				F4C39BFA1B608C7000D5AC25 /* TACView.swift */,
+				F4C39BFB1B608C7000D5AC25 /* UIView+Common.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		F4C39BFC1B608C7000D5AC25 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F4C39BFD1B608C7000D5AC25 /* TACViewController.swift */,
+			);
+			path = UIViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +287,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4C39C021B608C7000D5AC25 /* TACView.swift in Sources */,
 				F4C39BD21B608B8500D5AC25 /* ViewController.swift in Sources */,
+				F4C39C001B608C7000D5AC25 /* TACTableView.swift in Sources */,
+				F4C39C041B608C7000D5AC25 /* TACViewController.swift in Sources */,
+				F4C39C031B608C7000D5AC25 /* UIView+Common.swift in Sources */,
 				F4C39BD01B608B8500D5AC25 /* AppDelegate.swift in Sources */,
+				F4C39C061B6092DA00D5AC25 /* UITableViewCell+Common.swift in Sources */,
+				F4C39BFE1B608C7000D5AC25 /* NSObject+Common.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
