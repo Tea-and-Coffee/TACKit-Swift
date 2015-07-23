@@ -1,9 +1,9 @@
 //
 //  UIView+Common.swift
-//  MobileMessenger
+//  TACKitSwift
 //
-//  Created by companion_ios on 20150706.
-//  Copyright (c) 2015年 companion_ios. All rights reserved.
+//  Created by masato_arai on 2015/07/06.
+//  Copyright (c) 2015年 Tea and Coffee. All rights reserved.
 //
 
 import UIKit
